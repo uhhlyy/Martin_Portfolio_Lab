@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Beautiful and Elegant Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <title>Ally Voldigoad • Portfolio Greenhouse</title>
+  </head>
+  <body class="bg-ghibli-cream text-ghibli-green-deep select-none overflow-x-hidden min-h-screen relative font-sans">
+    
+    <!-- Whimsical Parallax/Floating Atmosphere Layers -->
+    <div class="absolute inset-0 overflow-hidden pointer-events-none z-10">
+      
+      <!-- Parallax Leaf 1 (Bends as you scroll) -->
+      <div class="absolute top-[18vh] left-[6%] w-24 h-24 opacity-15 parallax-layer hidden md:block" data-speed="-0.38" data-rotate="0.04">
+        <svg viewBox="0 0 200 200" fill="#748E63">
+          <path d="M100 0C100 55 55 100 0 100C55 100 100 145 100 200C100 145 145 100 200 100C145 100 100 55 100 0Z"/>
+        </svg>
+      </div>
+
+      <!-- Parallax Leaf 2 (Sways slightly opposite) -->
+      <div class="absolute top-[85vh] right-[8%] w-28 h-28 opacity-10 parallax-layer hidden md:block" data-speed="0.25" data-rotate="-0.03">
+        <svg viewBox="0 0 200 200" fill="#9CB380">
+          <path d="M100 0C100 55 55 100 0 100C55 100 100 145 100 200C100 145 145 100 200 100C145 100 100 55 100 0Z"/>
+        </svg>
+      </div>
+
+      <!-- Parallax Sparkles (Low-mid scroll depth) -->
+      <div class="absolute top-[220vh] left-[4%] w-16 h-16 opacity-10 parallax-layer" data-speed="0.12" data-rotate="0.08">
+        <svg viewBox="0 0 24 24" fill="#eac269" stroke="none">
+          <path d="M12 0c.231 4.772 3.228 7.769 8 8-4.772.231-7.769 3.228-8 8-.231-4.772-3.228-7.769-8-8 4.772-.231 7.769-3.228 8-8z"/>
+        </svg>
+      </div>
+
+      <!-- Dynamic Micro Wind-Breeze Line -->
+      <div class="absolute top-[52vh] left-0 right-0 h-[1px] bg-ghibli-green-sage opacity-15 overflow-hidden flex items-center md:flex-row flex-col">
+        <div class="animate-wind-line w-[200vw] h-full bg-gradient-to-r from-transparent via-ghibli-green-sage to-transparent opacity-60"></div>
+      </div>
+    </div>
+
+    <!-- EDITORIAL HEADER MODULE -->
+    <nav id="navbar" class="fixed top-6 left-1/2 -translate-x-1/2 z-50 flex items-center gap-2 sm:gap-4 px-6 py-3.5 glass rounded-full font-sans text-[10px] sm:text-xs font-bold tracking-[0.22em] text-ghibli-green-deep shadow-[0_4px_30px_rgba(0,0,0,0.02)] transition-all duration-300">
+      <button data-scroll-to="hero" class="hover:text-ghibli-green-sage transition-colors cursor-pointer uppercase">Greenhouse</button>
+      <span class="opacity-20 text-ghibli-green-deep">/</span>
+      <button data-scroll-to="about" class="hover:text-ghibli-green-sage transition-colors cursor-pointer uppercase">Our Story</button>
+      <span class="opacity-20 text-ghibli-green-deep">/</span>
+      <button data-scroll-to="greenhouse" class="hover:text-ghibli-green-sage transition-colors cursor-pointer uppercase">Crops</button>
+      <span class="opacity-20 text-ghibli-green-deep">/</span>
+      <button data-scroll-to="hobbies" class="hover:text-ghibli-green-sage transition-colors cursor-pointer uppercase">Garden</button>
+      <span class="opacity-20 text-ghibli-green-deep">/</span>
+      <button data-scroll-to="scenery" class="hover:text-ghibli-green-sage transition-colors cursor-pointer uppercase">Window</button>
+    </nav>
+
+    <!-- HERO SECTION: Interactive 3D Lanyard Card & Portfolio Headline -->
+    <section id="hero" class="relative min-h-[100vh] flex items-center pt-20 overflow-hidden bg-gradient-to-b from-ghibli-sky via-ghibli-cream to-ghibli-cream">
+      
+      <div class="w-full max-w-7xl mx-auto px-6 sm:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center min-h-[80vh] py-12">
+        
+        <!-- LEFT COLUMN: Professional Profile Summary & Typographic Grid -->
+        <div class="lg:col-span-6 flex flex-col justify-center space-y-6 z-20">
+          
+          <span class="text-ghibli-green-sage font-mono text-[10px] sm:text-xs font-semibold tracking-[0.3em] uppercase flex items-center gap-2.5">
+            <span class="w-2 h-2 bg-[#748E63] rounded-full animate-pulse"></span>
+            ACTIVATE BIO-PERSISTENT CERTIFICATE
+          </span>
+          
+          <h1 class="font-serif text-5xl sm:text-7xl font-light leading-[0.95] italic text-ghibli-green-deep tracking-tight">
+            Crafting warm, <br />
+            <span class="font-semibold not-italic ml-4 sm:ml-8 text-[#748E63] user-name">Ally Voldigoad</span>
+          </h1>
+          
+          <p class="font-serif text-xl sm:text-2xl text-[#5e5349] font-light leading-relaxed user-tagline italic border-l-2 border-ghibli-green-sage/30 pl-4">
+            Loading certificate metadata...
+          </p>
+
+          <!-- Core Skills Badges Grid -->
+          <div class="flex flex-wrap gap-2.5 py-2">
+            <span class="bg-[#dccbc0]/45 border border-[#c1aba0]/40 text-ghibli-green-deep font-mono text-[9px] font-bold tracking-wider uppercase px-3 py-1 rounded">Interactive WebGL</span>
+            <span class="bg-[#dcbcc5]/45 border border-[#caa5af]/40 text-ghibli-green-deep font-mono text-[9px] font-bold tracking-wider uppercase px-3 py-1 rounded">Vanilla ES6+</span>
+            <span class="bg-[#cedcb0]/45 border border-[#b2c390]/40 text-ghibli-green-deep font-mono text-[9px] font-bold tracking-wider uppercase px-3 py-1 rounded">Haptic CSS3D</span>
+            <span class="bg-[#badbe5]/45 border border-[#a0cbd6]/40 text-ghibli-green-deep font-mono text-[9px] font-bold tracking-wider uppercase px-3 py-1 rounded">Sway Parallax</span>
+          </div>
+          
+          <div class="pt-4 flex flex-wrap gap-4 items-center">
+            <button data-scroll-to="about" class="font-sans text-xs font-bold uppercase tracking-[0.2em] px-8 py-4 bg-[#748E63] text-white rounded-full hover:bg-[#5f7451] hover:-translate-y-0.5 shadow-md hover:shadow-lg transition-all flex items-center gap-2.5 cursor-pointer">
+              Explore Path <span class="text-sm">↓</span>
+            </button>
+            <button data-scroll-to="contact" class="font-sans text-xs font-bold uppercase tracking-[0.2em] px-8 py-4 border-2 border-ghibli-green-deep/30 text-ghibli-green-deep rounded-full hover:bg-ghibli-green-deep/5 transition-all flex items-center gap-2.5 cursor-pointer">
+              Send Telegram
+            </button>
+          </div>
+        </div>
+
+        <!-- RIGHT COLUMN: CENTRAL LARGE 3D PHYSICAL CANVAS SYSTEM -->
+        <div class="lg:col-span-6 relative h-[650px] flex items-center justify-center select-none" id="lanyard-container">
+          
+          <!-- Large center focal blur glow -->
+          <div class="absolute w-[360px] h-[360px] sm:w-[480px] sm:h-[480px] bg-[#D0B8A8]/15 rounded-full blur-[90px] -z-10 animate-pulse" style="animation-duration: 8s;"></div>
+          
+          <!-- Anchor / Canvas & Card Assembly Holder -->
+          <div id="lanyard-wrapper" class="w-full h-full absolute inset-0 overflow-visible">
+            
+            <!-- Real-time curvature rope renderer -->
+            <canvas id="lanyard-canvas" class="absolute inset-0 pointer-events-none z-20"></canvas>
+
+            <!-- PHYSICAL 3D MASS CARD (DIMENSIONS: 320px * 480px) -->
+            <div id="lanyard-card" class="absolute w-[320px] h-[480px] cursor-grab active:cursor-grabbing transition-transform duration-75 select-none z-30" style="transform-style: preserve-3d; will-change: transform, left, top;" data-flipped="false">
+              
+              <!-- Double-Sided Flipping Inner Assembly -->
+              <div class="lanyard-card-inner w-full h-full relative" style="transform-style: preserve-3d; transition: transform 0.65s cubic-bezier(0.25, 1, 0.5, 1);">
+                
+                <!-- 1. CARD FRONT FACE (Worker Pass / Bio-Doc) -->
+                <div class="absolute inset-0 w-full h-full bg-white/70 glass border-2 border-white/80 rounded-3xl p-5 shadow-[inset_0_2px_4px_rgba(255,255,255,0.7),0_10px_35px_rgba(116,142,99,0.06)] flex flex-col justify-between overflow-hidden" style="backface-visibility: hidden; transform: rotateY(0deg);">
+                  
+                  <!-- Glossy Shine Sweeper -->
+                  <div class="glare-front absolute inset-0 pointer-events-none mix-blend-overlay z-40 transition-opacity"></div>
+                  
+                  <!-- Clasp Hole Frame -->
+                  <div class="absolute top-2.5 left-1/2 -translate-x-1/2 w-8 h-3.5 bg-ghibli-green-deep/8 dark:bg-black/10 border border-ghibli-green-deep/20 rounded-full flex items-center justify-center">
+                    <div class="w-4 h-1.5 bg-ghibli-cream rounded-full"></div>
+                  </div>
+
+                  <!-- Face Header -->
+                  <div class="flex items-center justify-between border-b border-ghibli-green-deep/10 pb-4 mt-4">
+                    <div class="flex flex-col">
+                      <span class="font-mono text-[8px] font-bold tracking-widest text-ghibli-green-sage">EST. JUNE 2026</span>
+                      <span class="font-sans text-[10px] font-bold tracking-[0.15em] text-ghibli-green-deep user-role">CREATIVE DESIGNER</span>
+                    </div>
+                    <div class="w-8 h-8 rounded-full bg-[#748E63]/15 flex items-center justify-center font-serif text-[11px] font-bold text-[#748E63] border border-[#748E63]/20">
+                      AV
+                    </div>
+                  </div>
+
+                  <!-- Portrait Avatar Frame -->
+                  <div class="my-4 relative">
+                    <div class="w-full aspect-[4/3] rounded-2xl overflow-hidden border border-ghibli-green-deep/15 bg-ghibli-green-pale shadow-inner">
+                      <img class="avatar-img w-full h-full object-cover select-none pointer-events-none hover:scale-105 transition-transform duration-700" alt="Identity Portrait" referrerPolicy="no-referrer" />
+                    </div>
+                    
+                    <!-- Floating Gold Hologram Emblem -->
+                    <div class="absolute -bottom-2 -right-2 w-8 h-8 rounded-full bg-[#eac269] border border-white/50 shadow-md flex items-center justify-center animate-spin" style="animation-duration: 20s;">
+                      <svg class="w-4 h-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                      </svg>
+                    </div>
+                  </div>
+
+                  <!-- Core Biographical Text Details -->
+                  <div class="space-y-1.5 text-center px-2">
+                    <h2 class="font-serif text-3xl font-semibold tracking-tight text-ghibli-green-deep leading-none user-name">Ally Voldigoad</h2>
+                    <p class="font-serif text-xs text-[#5e5349] italic leading-tight">“Merging modular complex codes with tactile watercolor environments.”</p>
+                  </div>
+
+                  <!-- Barcode Footer Specifications -->
+                  <div class="border-t border-ghibli-green-deep/10 pt-4 mt-3 flex items-center justify-between font-mono text-[8px] text-[#5e5349]/70">
+                    <div class="flex flex-col space-y-1">
+                      <span>DOC ID // 0FE388EF_VER</span>
+                      <span>SECURE LEVEL // 04 ALPHA</span>
+                    </div>
+                    <div class="flex flex-col items-end">
+                      <!-- Decorative Barcode -->
+                      <div class="h-5 w-24 bg-gradient-to-r from-ghibli-green-deep via-transparent to-ghibli-green-deep flex gap-[1px] opacity-75">
+                        <span class="w-1 bg-ghibli-green-deep h-full"></span>
+                        <span class="w-[2px] bg-ghibli-green-deep h-full"></span>
+                        <span class="w-[3px] bg-ghibli-green-deep h-full"></span>
+                        <span class="w-1 bg-ghibli-green-deep h-full"></span>
+                        <span class="w-[1px] bg-ghibli-green-deep h-full"></span>
+                        <span class="w-2 bg-ghibli-green-deep h-full"></span>
+                        <span class="w-[3px] bg-ghibli-green-deep h-full"></span>
+                        <span class="w-1 bg-ghibli-green-deep h-full"></span>
+                        <span class="w-[1px] bg-ghibli-green-deep h-full"></span>
+                        <span class="w-1 bg-ghibli-green-deep h-full"></span>
+                      </div>
+                      <span class="mt-0.5 tracking-[0.2em] font-medium">SYS.GEN.PASS</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 2. CARD BACK FACE (Editorial Curated Cardboard Cover) -->
+                <div class="absolute inset-0 w-full h-full bg-[#fde9cc] border-2 border-white/70 rounded-3xl p-6 shadow-2xl flex flex-col justify-between overflow-hidden" style="backface-visibility: hidden; transform: rotateY(180deg); transform-style: preserve-3d;">
+                  
+                  <!-- Glossy Shine Sweeper -->
+                  <div class="glare-back absolute inset-0 pointer-events-none mix-blend-overlay z-40 transition-opacity"></div>
+                  
+                  <!-- Clasp Hole Frame -->
+                  <div class="absolute top-2.5 left-1/2 -translate-x-1/2 w-8 h-3.5 bg-black/10 border border-[#b44c33]/25 rounded-full flex items-center justify-center">
+                    <div class="w-4 h-1.5 bg-[#fde9cc] rounded-full"></div>
+                  </div>
+
+                  <!-- Brand Label watermark -->
+                  <div class="mt-4 border-b border-[#b44c33]/15 pb-2">
+                    <span class="font-mono text-[8px] font-bold text-[#b44c33] tracking-[0.3em] uppercase">SYSTEM SCHEMA CERTIFICATE</span>
+                  </div>
+
+                  <!-- Intricate Watercolor Background Segment (Full Art) -->
+                  <div class="flex-grow my-4 rounded-xl overflow-hidden border border-[#b44c33]/2O relative aspect-video shadow-inner bg-ghibli-paper">
+                    <div id="scenery-bg-container" class="w-full h-full bg-cover bg-center opacity-85 select-none pointer-events-none"></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#b44c33]/25 to-transparent pointer-events-none"></div>
+                  </div>
+
+                  <!-- Curated Quote Block -->
+                  <div class="space-y-1 my-2">
+                    <span class="font-sans text-[8px] font-bold tracking-[0.2em] text-[#b44c33]/60 uppercase">MATION MANIFESTO</span>
+                    <p class="font-serif text-[11px] sm:text-xs text-[#5e5349] leading-relaxed italic core-manifesto text-justify">
+                      “Close your eyes, feel the cool forest wind, and recollect that software architecture is simply another garden waiting to be nurtured with patience, water, and timeless care.”
+                    </p>
+                  </div>
+
+                  <!-- Social coordinates / QR Scanner representation -->
+                  <div class="border-t border-[#b44c33]/15 pt-3 mt-1 flex items-center justify-between font-mono text-[8px] text-[#5e5349]/80">
+                    <div class="flex flex-col space-y-1 capitalize">
+                      <span>STROLL // @allyvoldigoad</span>
+                      <span>TELEGRAM // secure_voldigoad</span>
+                    </div>
+                    
+                    <!-- Styled QR Segment -->
+                    <div class="w-10 h-10 border border-[#b44c33]/30 p-0.5 rounded bg-white flex flex-col justify-between items-center select-none pointer-events-none">
+                      <!-- Grid vector -->
+                      <div class="w-full h-full relative opacity-85">
+                         <div class="absolute top-0 left-0 w-2.5 h-2.5 bg-ghibli-green-deep border border-white"></div>
+                         <div class="absolute top-0 right-0 w-2.5 h-2.5 bg-ghibli-green-deep border border-white"></div>
+                         <div class="absolute bottom-0 left-0 w-2.5 h-2.5 bg-ghibli-green-deep border border-white"></div>
+                         <div class="absolute top-3 left-3 w-1.5 h-1.5 bg-[#b44c33]"></div>
+                         <div class="absolute bottom-1 right-1 w-1.5 h-1.5 bg-ghibli-green-deep"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- CARD SHADOW BASE: Translates live underneath the lanyard swing -->
+            <div id="card-shadow" class="absolute left-1/2 top-11/12 -translate-x-1/2 w-[240px] h-4 bg-[#4a3f35]/25 rounded-full pointer-events-none z-10 transition-transform duration-75 ease" style="will-change: transform, filter, opacity;"></div>
+          </div>
+
+          <!-- Click Hint badge metadata -->
+          <div class="absolute bottom-6 text-center select-none pointer-events-none z-30">
+            <span id="badge-flip-btn" class="ignore-drag pointer-events-auto glass border border-ghibli-green-deep/12 px-5 py-2.5 rounded-full text-[10px] font-sans tracking-[0.18em] font-bold uppercase text-[#5e5349] flex items-center gap-1.5 shadow-md hover:bg-white/80 active:scale-95 transition-all cursor-pointer">
+              <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"></path>
+              </svg> Rotate Pass Certificate
+            </span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- OUR STORY / APPROACH TO THE GARDEN -->
+    <section id="about" class="relative py-24 bg-ghibli-paper/40 border-y border-ghibli-green-deep/5 overflow-hidden">
+      <!-- Watermark Background Ornament -->
+      <div class="absolute -bottom-16 -left-16 text-[#748E63]/5 rotate-12 pointer-events-none">
+        <svg class="w-80 h-80" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2zm1 17.93V19a1 1 0 0 1-2 0v-.07A8 8 0 0 1 4.07 13H5a1 1 0 0 1 0-2h-.93A8 8 0 0 1 11 4.07V5a1 1 0 0 1 2 0v-.07A8 8 0 0 1 19.93 11H19a1 1 0 0 1 0 2h.93A8 8 0 0 1 13 19.93z"/>
+        </svg>
+      </div>
+
+      <div class="max-w-4xl mx-auto px-6 text-center space-y-6 relative z-10">
+        <div class="inline-flex justify-center items-center p-3.5 rounded-full bg-[#748E63]/10 text-[#748E63] mb-2 border border-[#748E63]/20">
+          <svg class="w-6 h-6 animate-pulse" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 3.5 1 9.8a7 7 0 0 1-9 8.2Z"></path>
+            <path d="M9 22v-4h4"></path>
+          </svg>
+        </div>
+        
+        <h3 class="font-sans text-[10px] sm:text-xs font-bold uppercase tracking-[0.3em] text-[#D0B8A8]">Maker Approach</h3>
+        
+        <h2 class="font-serif text-3xl sm:text-5xl font-light italic text-ghibli-green-deep leading-tight tracking-tight intro-heading">
+          Watering logic structures like small acorns.
+        </h2>
+
+        <p class="font-serif text-lg sm:text-xl text-[#5e5349] font-light leading-relaxed max-w-3xl mx-auto text-justify sm:text-center md:px-8 mt-4 intro-paragraph">
+          Evaluating the intersections of computing and poetry. Our web projects are treated as organic landscapes, utilizing precise clean spacing, delicate typography combinations, responsive interfaces, and natural-feeling kinetic feedback.
+        </p>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO PROJECTS GREENHOUSE Grid -->
+    <section id="greenhouse" class="py-24 max-w-7xl mx-auto px-6 sm:px-12 relative">
+      <div class="space-y-4 mb-12 text-center md:text-left">
+        <h4 class="font-sans text-xs font-bold uppercase tracking-[0.3em] text-[#D0B8A8]">FINEST HARVESTS</h4>
+        <h2 class="font-serif text-4xl sm:text-5xl font-light italic text-ghibli-green-deep tracking-tight">
+          Selected <span class="font-semibold not-italic text-[#748E63]">Web Curations</span>
+        </h2>
+        <div class="w-16 h-[2px] bg-[#748E63] mt-3 mx-auto md:mx-0"></div>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Project Card 1 -->
+        <div class="bg-white/45 glass border border-ghibli-green-deep/5 rounded-2xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 hover:border-[#748E63]/30 hover:-translate-y-1 flex flex-col justify-between group">
+          <div class="space-y-4">
+            <span class="font-mono text-[9px] text-[#b44c33] tracking-[0.25em] uppercase font-bold">01 / NODE-PHYSICS</span>
+            <h3 class="font-serif text-2xl font-semibold text-ghibli-green-deep">Interactive Lanyard</h3>
+            <p class="font-serif text-[#5e5349] text-sm leading-relaxed italic">A high-fidelity HTML and CSS 3D physics lanyard simulation. Features dual-sided rotation, realistic spring rope curvature on canvas, inertial tilt calculation, and real-time cursor-glare sweep tracking.</p>
+          </div>
+          <div class="pt-6 flex justify-between items-center border-t border-ghibli-green-deep/5 mt-4">
+            <span class="font-mono text-[9px] text-ghibli-green-sage font-bold">VANILLA JS • CANVAS CSS3D</span>
+            <span class="text-xs font-bold tracking-widest text-[#748E63] group-hover:translate-x-1.5 transition-transform duration-300">ACTIVE GROW ↗</span>
+          </div>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div class="bg-white/45 glass border border-ghibli-green-deep/5 rounded-2xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 hover:border-[#748E63]/30 hover:-translate-y-1 flex flex-col justify-between group">
+          <div class="space-y-4">
+            <span class="font-mono text-[9px] text-[#b44c33] tracking-[0.25em] uppercase font-bold">02 / INTERACTIVITY</span>
+            <h3 class="font-serif text-2xl font-semibold text-ghibli-green-deep">Forest Scroll Parallax</h3>
+            <p class="font-serif text-[#5e5349] text-sm leading-relaxed italic">Multi-layered scroll-bound scenery translator. Staggers background landscapes, floating elements, and wind sparks smoothly based on precise scroll viewport depth ratios completely without bloating external plugins.</p>
+          </div>
+          <div class="pt-6 flex justify-between items-center border-t border-ghibli-green-deep/5 mt-4">
+            <span class="font-mono text-[9px] text-ghibli-green-sage font-bold">CSS PERSPECTIVE • DOM EVENTS</span>
+            <span class="text-xs font-bold tracking-widest text-[#748E63] group-hover:translate-x-1.5 transition-transform duration-300">ACTIVE GROW ↗</span>
+          </div>
+        </div>
+
+        <!-- Project Card 3 -->
+        <div class="bg-white/45 glass border border-ghibli-green-deep/5 rounded-2xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 hover:border-[#748E63]/30 hover:-translate-y-1 flex flex-col justify-between group">
+          <div class="space-y-4">
+            <span class="font-mono text-[9px] text-[#b44c33] tracking-[0.25em] uppercase font-bold">03 / TYPOGRAPHY</span>
+            <h3 class="font-serif text-2xl font-semibold text-ghibli-green-deep">Typographic Herbarium</h3>
+            <p class="font-serif text-[#5e5349] text-sm leading-relaxed italic">An elegant, highly curated editorial text showcase combining Cormorant Garamond and JetBrains Mono fonts. Employs comfortable, rhythmic padding and clean grid alignment designed for long-term reading focus.</p>
+          </div>
+          <div class="pt-6 flex justify-between items-center border-t border-ghibli-green-deep/5 mt-4">
+            <span class="font-mono text-[9px] text-ghibli-green-sage font-bold">HTML5 • CSS GRID • EM MARGINS</span>
+            <span class="text-xs font-bold tracking-widest text-[#748E63] group-hover:translate-x-1.5 transition-transform duration-300">ACTIVE GROW ↗</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- HOBBIES ARCHITECTURE (MUSEUM AREA) -->
+    <section id="hobbies" class="py-24 max-w-7xl mx-auto px-6 sm:px-12 bg-[#f4ece0]/50 rounded-3xl border border-ghibli-green-deep/5 relative mb-24 overflow-hidden">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Tabular Grid list (Left side loaded dynamically via script) -->
+        <div class="lg:col-span-7 space-y-8 z-10">
+          <div class="space-y-2">
+            <h4 class="font-sans text-xs font-bold uppercase tracking-[0.3em] text-[#D0B8A8]">MEDITATION CHAMBERS</h4>
+            <h2 class="font-serif text-4xl sm:text-5xl font-light italic text-ghibli-green-deep tracking-tight">
+              Quiet Joys & <span class="font-bold not-italic text-[#748E63]">Wandering Habits</span>
+            </h2>
+            <div class="w-16 h-[2.5px] bg-[#748E63] mt-3"></div>
+          </div>
+
+          <!-- Grid loaded and populated from script to maintain clean customizable data -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-5" id="hobbies-grid"></div>
+        </div>
+
+        <!-- Picture Frame (Right side) -->
+        <div class="lg:col-span-5 flex flex-col justify-center items-center relative z-10">
+          <div class="bg-white p-5 pb-16 rounded-3xl shadow-[0_15px_40px_rgba(116,142,99,0.06)] border border-ghibli-green-deep/5 max-w-[380px] w-full transform hover:rotate-1 hover:-translate-y-1 transition-all duration-500">
+            <div class="overflow-hidden rounded-2xl aspect-[3/4] bg-ghibli-green-pale">
+              <img id="hobbies-pic" class="w-full h-full object-cover select-none pointer-events-none hover:scale-105 transition-transform duration-700" alt="Curated decoration frame" referrerPolicy="no-referrer" />
+            </div>
+            <div class="mt-5 text-center font-serif text-[#5e5349] text-base italic leading-relaxed">
+              “Tending our garden of ideas”
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- METAPHORICAL CLOUD WINDOW / IMMERSIVE PARALLAX OVERLAY -->
+    <section id="scenery" class="relative py-32 bg-ghibli-sky overflow-hidden border-t border-ghibli-green-deep/5">
+      
+      <!-- Scrolling background layer -->
+      <div id="scenery-bg-container" class="absolute inset-0 bg-cover bg-center -z-10 opacity-70 parallax-layer" data-speed="0.22" style="background-attachment: scroll;"></div>
+      
+      <div class="absolute inset-0 bg-gradient-to-t from-ghibli-green-deep/30 via-transparent to-ghibli-sky/40 pointer-events-none"></div>
+
+      <div class="relative z-10 max-w-4xl mx-auto text-center px-6 text-white">
+        <div class="glass backdrop-blur-md shadow-[0_15px_40px_rgba(0,0,0,0.05)] rounded-3xl p-8 sm:p-14 border border-white/20 inline-block space-y-6 max-w-2xl mx-auto text-ghibli-green-deep">
+          <h2 class="font-serif text-3xl sm:text-5xl font-light italic">
+            Behold the Meadow
+          </h2>
+          <p class="font-serif text-base sm:text-lg leading-relaxed text-[#5e5349]">
+            “Close your eyes, breathe, and recall that there are magical grasslands, soft blowing breezes, and gentle spirits waiting just beyond the digital glass grid of your screen.”
+          </p>
+          
+          <div class="pt-2">
+            <button data-scroll-to="contact" class="font-sans text-xs font-bold uppercase tracking-[0.2em] px-8 py-4 bg-[#748E63] text-white rounded-full hover:bg-[#5f7451] transition-all inline-flex items-center gap-3 shadow-md hover:shadow-lg cursor-pointer">
+              Send an Envelope
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MINIMAL CONTACT MEADOW SECTION -->
+    <section id="contact" class="py-24 max-w-3xl mx-auto px-6 relative">
+      <div class="text-center space-y-3 mb-12">
+        <h4 class="font-sans text-xs font-bold uppercase tracking-[0.3em] text-[#D0B8A8]">CORRESPONDENCE</h4>
+        <h2 class="font-serif text-4xl font-light italic text-ghibli-green-deep">Pigeon Post</h2>
+        <p class="font-serif text-sm text-[#5e5349] italic">“Our letter box is always nested near the oaks.”</p>
+        <div class="w-12 h-[1.5px] bg-[#748E63] mx-auto mt-2"></div>
+      </div>
+
+      <!-- Compact Ghibli styled feedback form -->
+      <form id="portfolio-contact-form" class="space-y-6 bg-white/40 glass p-8 sm:p-10 rounded-3xl border border-ghibli-green-deep/5 shadow-sm">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+          <div class="space-y-1.5">
+            <label for="form-name" class="block font-mono text-[9px] font-bold tracking-widest text-[#748E63] uppercase">Your Name</label>
+            <input type="text" id="form-name" required class="w-full bg-[#fcfaf5]/75 border border-ghibli-green-deep/10 text-ghibli-green-deep rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-1 focus:ring-[#748E63] focus:border-[#748E63] font-serif italic" placeholder="How should we greet you?">
+          </div>
+          <div class="space-y-1.5">
+            <label for="form-email" class="block font-mono text-[9px] font-bold tracking-widest text-[#748E63] uppercase">Email coordinates</label>
+            <input type="email" id="form-email" required class="w-full bg-[#fcfaf5]/75 border border-ghibli-green-deep/10 text-ghibli-green-deep rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-1 focus:ring-[#748E63] focus:border-[#748E63] font-mono text-[11px]" placeholder="letterbox@domain.com">
+          </div>
+        </div>
+        
+        <div class="space-y-1.5">
+          <label for="form-message" class="block font-mono text-[9px] font-bold tracking-widest text-[#748E63] uppercase">Message ink</label>
+          <textarea id="form-message" rows="4" required class="w-full bg-[#fcfaf5]/75 border border-ghibli-green-deep/10 text-ghibli-green-deep rounded-xl p-4 text-sm focus:outline-none focus:ring-1 focus:ring-[#748E63] focus:border-[#748E63] font-serif italic leading-relaxed" placeholder="Write down your thoughts, drawings, or business inquiries..."></textarea>
+        </div>
+
+        <button type="submit" class="w-full font-sans text-xs font-bold uppercase tracking-[0.2em] py-4 bg-[#748E63] text-white rounded-full hover:bg-[#5f7451] hover:-translate-y-0.5 active:scale-95 transition-all shadow-md flex items-center justify-center gap-2 cursor-pointer">
+          Deliver Stamp Code
+        </button>
+      </form>
+    </section>
+
+    <!-- FOOTER DESIGN -->
+    <footer class="bg-ghibli-green-deep text-ghibli-paper py-16 text-center relative border-t border-ghibli-green-deep">
+      <div class="max-w-4xl mx-auto px-6 space-y-6 z-10 relative">
+        <div class="font-serif text-4xl font-light italic text-[#9CB380] tracking-tight">
+          <span class="user-name">Ally Voldigoad</span>
+        </div>
+        <p class="font-sans text-[9px] tracking-[0.2em] text-[#D0B8A8] uppercase max-w-sm mx-auto font-semibold">
+          Standalone HTML5 • Responsive Haptic Canvas CSS3D Lanyard
+        </p>
+        
+        <div class="w-12 h-[1px] bg-[#748E63] mx-auto my-6 opacity-30"></div>
+        
+        <div class="font-sans text-[9px] text-white/30 tracking-[0.25em] uppercase">
+          © 2026 • Curated with mechanical pencil sketches & forest breeze washes
+        </div>
+      </div>
+
+      <!-- Visual visual bottom strip -->
+      <div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-[#748E63] via-[#D0B8A8] to-[#9CB380] z-50"></div>
+    </footer>
+
+    <!-- Vanilla Entry Assembly module -->
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

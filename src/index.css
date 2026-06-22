@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Custom Editorial Ghibli watercolor styling colors */
+  --color-ghibli-cream: #fdf9f3;
+  --color-ghibli-paper: #f5eedf;
+  --color-ghibli-green-deep: #4a3f35;
+  --color-ghibli-green-sage: #748E63;
+  --color-ghibli-green-pale: #e6ede9;
+  --color-ghibli-rust: #df6248;
+  --color-ghibli-terracotta: #b44c33;
+  --color-ghibli-sky: #e4eff2;
+  --color-ghibli-amber: #eac269;
+  
+  /* Additional Editorial Tone codes */
+  --color-editorial-olive: #9CB380;
+  --color-editorial-tan: #D0B8A8;
+}
+
+body {
+  background-color: var(--color-ghibli-cream);
+  color: var(--color-ghibli-green-deep);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+}
+
+/* Beautiful custom vintage scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-ghibli-cream);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-ghibli-green-sage);
+  border-radius: 6px;
+  border: 3px solid var(--color-ghibli-cream);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-ghibli-green-deep);
+}
+
+/* Glassmorphism style element helper */
+.glass {
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.65);
+}
+
+.glass-scrolled {
+  background: rgba(253, 249, 243, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-color: rgba(116, 142, 99, 0.15);
+  box-shadow: 0 10px 42px rgba(74, 63, 53, 0.04);
+}
+
+/* Lanyard container perspective system */
+#lanyard-container {
+  perspective: 1500px;
+}
+
+/* GPU Accelerated 3D Transform presets for Lanyard Card */
+#lanyard-card {
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  will-change: transform, left, top;
+}
+
+.lanyard-card-inner {
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+}
+
+/* Hides back-facing surface during 180° rotation flips */
+.lanyard-card-inner > div {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  box-shadow: 0 15px 45px rgba(74, 63, 53, 0.08);
+}
+
+/* Custom 3D Glare Lighting Sweep */
+.glare-front {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 65%);
+  mix-blend-mode: overlay;
+}
+.glare-back {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 65%);
+  mix-blend-mode: overlay;
+}
+
+/* Wind line breeze particle animation loop */
+@keyframes breeze {
+  0% { transform: translateX(-100vw); }
+  100% { transform: translateX(100vw); }
+}
+.animate-wind-line {
+  animation: breeze 12s linear infinite;
+}
+
+/* Gentle star/sparkle parallax scaling */
+.parallax-layer {
+  will-change: transform;
+  transition: transform 0.1s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* Helper to allow non-drag regions on card like buttons */
+.ignore-drag {
+  pointer-events: auto;
+}

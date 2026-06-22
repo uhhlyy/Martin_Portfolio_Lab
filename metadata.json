@@ -1,0 +1,6 @@
+{
+  "name": "Creative Ghibli Portfolio",
+  "description": "A warm, whimsical, and interactive 3D portfolio layout styled with nostalgic Studio Ghibli-inspired watercolors and interactive lanyard badge.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
